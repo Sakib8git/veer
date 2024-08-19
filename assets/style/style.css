@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", system-ui;
+    
+}
+p, span, a{
+    font-family: "Poppins", system-ui;
+   
+}
+
+:root{
+    --pry:#fbdb00 ;
+    --sec:#010101;
+}
+.container{
+    max-width: 70%;
+}
+/* common css end */
+/* nav start */
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
+.nav-item .nav-link{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 5px;
+    transition: all linear .4s;
+}
+.nav-item .nav-link:hover{
+    color: aqua;
+}
+
+.dropdown-menu :nth-child(1) .dropdown-item i {
+    transition: all linear .2s;
+}
+.dropdown-menu :nth-child(2) .dropdown-item i{
+    transition: all linear .2s;
+}
+.dropdown-menu:hover :nth-child(1) .dropdown-item i {
+    color: #14c9d6;
+}
+.dropdown-menu:hover :nth-child(2) .dropdown-item i{
+    color: #12c4d1;
+}
+.dropdown-divider .dropdown-item i{
+    color: #14c9d6;
+}
+/* nav end */
+
+/* hero start */
+.hero_con_main{
+    background-image: url(../img/hero/hero.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+}
+.hero_con{
+    padding-top:300px;
+}
+.hero_con h1{
+    color: aqua;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.hero_con button.hero_but {
+    height: 60px;
+    width: 220px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    color: aqua;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 1px solid white;
+    transition: all linear .2s;
+}
+.hero_con button.hero_but:hover {
+    color: rgb(57, 14, 14);
+    background-color: aquamarine;
+    font-weight: bold;
+    border: none;
+}
+.hero_con .con_p_main{
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+.contact_p{
+    text-align: center;
+    color: #95f8ff;
+    font-size: 25px;
+    padding: 25px 10px;
+    margin-top: 40px;
+    height: 160px;
+    width: 500px; 
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid aquamarine;
+    margin-bottom: 50px;
+    display: none;
+    
+}
+
+/* hero  end */
+/* we part */
+.we_con_main{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.we_con .we_img img{
+    width: 90%;
+}
+.we_con .we_p h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.we_con .we_p p{
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+.we_p .we_but button{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(1, 203, 136);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    border: none;
+    transition: all linear .2s;
+    margin-top: 15px;
+}
+.read_more{
+    display: none;
+}
+/* we part */
+/* servicepart */
+.ser_h{
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 80px;
+}
+.ser_icon{
+    height: 50px;
+    width: 60px;
+    background-color: rgb(6, 185, 185);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.ser_p h3{
+    text-transform: uppercase;
+}
+.ser_p p{
+    text-transform: capitalize;
+    text-align:left;
+}
+.service_b p{
+    padding-bottom: 20px;
+}
+.service_b{
+    padding: 30px 15px;
+    transition: all linear .4s;
+}
+.service_b:hover{
+    height: 200px;
+    width: 420px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px 1px rgb(158, 233, 208);
+}
+/* servicer end */
+
+/* work part */
+.work_con_main{
+    margin-bottom: 100px;
+}
+.work_h{
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.work_img{
+    position: relative;
+    margin-bottom: 20px;
+}
+.view_h{
+    color:white;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #010101bb;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    display: flex;    
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: all linear .4s;
+}
+.work_img:hover .overlay{
+    opacity: 1;
+}
+/* work part */
+
+/* hill start */
+
+.hill_con_main{
+    background-image: url(../img/hero/hill.png);
+    
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+.hill_con{
+    padding-top: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.icon_hill{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.hill_p p{
+    font-size: small;
+    margin-top: -5px;
+    text-transform: capitalize;
+}
+
+/* hill end */
+/* blog */
+.blog_con_main{
+    margin-bottom: 120px;
+}
+.blog_h{
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: -50px;
+}
+.read_more1 {
+    display: none;
+}
+.read_more2 {
+    display: none;
+}
+.read_more3 {
+    display: none;
+}
+
+.blog_but1 button{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(1, 203, 136);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    border: none;
+    transition: all linear .2s;
+    margin-top: 15px;
+}
+.blog_but2 button{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(1, 203, 136);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    border: none;
+    transition: all linear .2s;
+    margin-top: 15px;
+}
+.blog_but3 button{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(1, 203, 136);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    border: none;
+    transition: all linear .2s;
+    margin-top: 15px;
+}
+.blog_p p{
+        text-transform: capitalize;
+        font-size: 14px;
+        margin-bottom: 0px;
+        text-align: justify;
+}
+/* blog end */
+/* want */
+.want_con_main{
+    background-color: aquamarine;
+    
+}
+.want_con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+}
+.want_con h5{
+    color: white;
+    margin: 10px;
+    
+}
+.want_but button{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(1, 203, 136);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    border: none;
+    transition: all linear .2s;
+}
+.want_but button:hover{
+    background-color:#005359;
+}
+/* want end */
+/* footer */
+.footer_con_main{
+    background: #000;
+    padding: 120px;
+}
+.footer_con{
+    height: 250px;
+    border-right: 2px solid rgba(255, 255, 255, 0.47);
+    margin-left: 100px;
+    align-content: center;
+}
+.footer_con1{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-right: 100px;
+    padding-bottom: 60px;
+    padding-left: 180px;
+    padding-top: 20px;
+
+
+}
+
+.footer_icon{
+    margin-right: 20px;
+    font-size: 28px;
+    color: #ffffff;
+    
+}
+.footer_p{
+    align-items: end;
+}
+/* footer */
+.got_but{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-color: #fbd9008e;
+    bottom: 40px;
+    right: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: auto;
+}
+
